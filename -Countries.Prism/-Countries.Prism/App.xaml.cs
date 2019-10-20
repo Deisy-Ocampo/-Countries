@@ -4,6 +4,7 @@ using _Countries.Prism.ViewModels;
 using _Countries.Prism.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Countries.prism.Services;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace _Countries.Prism
@@ -23,13 +24,14 @@ namespace _Countries.Prism
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync("NavigationPage/CountriesPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.Register<IApiService, ApiService>();
             containerRegistry.RegisterForNavigation<NavigationPage>();
-            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<CountriesPage, CountriesPageViewModel>();
         }
     }
 }
