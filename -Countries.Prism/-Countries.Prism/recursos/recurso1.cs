@@ -2,199 +2,204 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace -Countries.Prism.recursos
+namespace Countries.Prism.recursos
 {
 
-class recurso1
-{
-    private static System.Resources.ResourceManager resourceMan;
-    private static System.Globalization.CultureInfo resourceCulture;
-    public static System.Resources.ResourceManager ResourceManager
+    class recurso1
     {
-        get
+        /*
+        private static System.Resources.ResourceManager resourceMan;
+        private static System.Globalization.CultureInfo resourceCulture;
+        public static System.Resources.ResourceManager ResourceManager
         {
-            if (object.Equals(null, resourceMan))
+
+            get
             {
-                System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Pais.recursos.recurso1", typeof(recurso1).Assembly);
-                resourceMan = temp;
+                if (object.Equals(null, resourceMan))
+                {
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Pais.recursos.recurso1", typeof(recurso1).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
             }
-            return resourceMan;
-        }
+            
     public static string Countries
-    {
-        get
         {
-            return ResourceManager.GetString("Countries", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("Countries", resourceCulture);
+            }
         }
-    }
 
-    public static string Country
-    {
-        get
+        public static string Country
         {
-            return ResourceManager.GetString("Country", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("Country", resourceCulture);
+            }
         }
-    }
 
-    public static string Information
-    {
-        get
+        public static string Information
         {
-            return ResourceManager.GetString("Information", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("Information", resourceCulture);
+            }
         }
-    }
 
-    public static string Capital
-    {
-        get
+        public static string Capital
         {
-            return ResourceManager.GetString("Capital", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("Capital", resourceCulture);
+            }
         }
-    }
 
-    public static string Population
-    {
-        get
+        public static string Population
         {
-            return ResourceManager.GetString("Population", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("Population", resourceCulture);
+            }
         }
-    }
 
-    public static string Area
-    {
-        get
+        public static string Area
         {
-            return ResourceManager.GetString("Area", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("Area", resourceCulture);
+            }
         }
-    }
 
-    public static string AlphaCode2
-    {
-        get
+        public static string AlphaCode2
         {
-            return ResourceManager.GetString("AlphaCode2", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("AlphaCode2", resourceCulture);
+            }
         }
-    }
 
-    public static string AlphaCode3
-    {
-        get
+        public static string AlphaCode3
         {
-            return ResourceManager.GetString("AlphaCode3", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("AlphaCode3", resourceCulture);
+            }
         }
-    }
 
-    public static string Region
-    {
-        get
+        public static string Region
         {
-            return ResourceManager.GetString("Region", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("Region", resourceCulture);
+            }
         }
-    }
 
-    public static string Subregion
-    {
-        get
+        public static string Subregion
         {
-            return ResourceManager.GetString("Subregion", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("Subregion", resourceCulture);
+            }
         }
-    }
 
-    public static string Moneda
-    {
-        get
+        public static string Moneda
         {
-    
-        return ResourceManager.GetString("Currencies", resourceCulture);
-        }
-    }
-public static string German
-    {
-        get
-        {
-            return ResourceManager.GetString("German", resourceCulture);
-        }
-    }
+            get
+            {
 
-    public static string Spanish
-    {
-        get
-        {
-            return ResourceManager.GetString("Spanish", resourceCulture);
+                return ResourceManager.GetString("Currencies", resourceCulture);
+            }
         }
-    }
-
-    public static string French
-    {
-        get
+        public static string German
         {
-            return ResourceManager.GetString("French", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("German", resourceCulture);
+            }
         }
-    }
 
-    public static string Japanese
-    {
-        get
+        public static string Spanish
         {
-            return ResourceManager.GetString("Japanese", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("Spanish", resourceCulture);
+            }
         }
-    }
 
-    public static string Italian
-    {
-        get
+        public static string French
         {
-            return ResourceManager.GetString("Italian", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("French", resourceCulture);
+            }
         }
-    }
 
-    public static string Brazilian
-    {
-        get
+        public static string Japanese
         {
-            return ResourceManager.GetString("Brazilian", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("Japanese", resourceCulture);
+            }
         }
-    }
 
-    public static string Portuguese
-    {
-        get
+        public static string Italian
         {
-            return ResourceManager.GetString("Portuguese", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("Italian", resourceCulture);
+            }
         }
-    }
 
-    public static string Dutch
-    {
-        get
+        public static string Brazilian
         {
-            return ResourceManager.GetString("Dutch", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("Brazilian", resourceCulture);
+            }
         }
-    }
 
-    public static string Croatian
-    {
-        get
+        public static string Portuguese
         {
-            return ResourceManager.GetString("Croatian", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("Portuguese", resourceCulture);
+            }
         }
-    }
 
-    public static string Persian
-    {
-        get
+        public static string Dutch
         {
-            return ResourceManager.GetString("Persian", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("Dutch", resourceCulture);
+            }
         }
-    }
 
-    public static string Translations
-    {
-        get
+        public static string Croatian
         {
-            return ResourceManager.GetString("Translations", resourceCulture);
+            get
+            {
+                return ResourceManager.GetString("Croatian", resourceCulture);
+            }
         }
-    }
 
+        public static string Persian
+        {
+            get
+            {
+                return ResourceManager.GetString("Persian", resourceCulture);
+            }
+        }
+
+        public static string Translations
+        {
+            get
+            {
+                return ResourceManager.GetString("Translations", resourceCulture);
+            }
+        }
+
+    }
+    */
 }
 }

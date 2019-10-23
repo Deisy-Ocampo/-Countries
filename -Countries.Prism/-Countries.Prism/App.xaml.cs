@@ -4,6 +4,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Countries.prism.Services;
 using Prism;
+using MyLeasing.Common.Services;
+using _Countries.Prism.Views;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace _Countries.Prism

@@ -91,6 +91,10 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\-Countries.Prism\Countries.Prism.csproj">
+      <Project>{d713d315-9a85-42e3-b432-154f0d8b6ee4}</Project>
+      <Name>Countries.Prism</Name>
+    </ProjectReference>
     <ProjectReference Include="..\_Countries.Prism\_Countries.Prism.csproj">
       <Project>{A682884C-CB44-4A89-B752-27BB634E0ABE}</Project>
       <Name>_Countries.Prism</Name>

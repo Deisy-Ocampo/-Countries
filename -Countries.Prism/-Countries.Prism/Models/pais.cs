@@ -3,11 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace -Countries.Prism.Models
+namespace Countries.Prism.Models
 {
-    class pais
+    public class pais
 {
-    ][JsonProperty(PropertyName = "name")]
+    [JsonProperty(PropertyName = "name")]
     public string Name { get; set; }
 
     [JsonProperty(PropertyName = "topLevelDomain")]
@@ -39,5 +39,41 @@ namespace -Countries.Prism.Models
 
     [JsonProperty(PropertyName = "languages")]
     public List<idioma> Languages { get; set; }
-}
+
+        [JsonProperty(PropertyName = "population")]
+        public int Population { get; set; }
+
+        [JsonProperty(PropertyName = "latlng")]
+        public List<double> Latlng { get; set; }
+
+        [JsonProperty(PropertyName = "demonym")]
+        public string Demonym { get; set; }
+
+        [JsonProperty(PropertyName = "area")]
+        public double? Area { get; set; }
+
+        [JsonProperty(PropertyName = "gini")]
+        public double? Gini { get; set; }
+
+        [JsonProperty(PropertyName = "timezones")]
+        public List<string> Timezones { get; set; }
+
+        [JsonProperty(PropertyName = "borders")]
+        public List<string> Borders { get; set; }
+
+        [JsonProperty(PropertyName = "nativeName")]
+        public string NativeName { get; set; }
+
+        [JsonProperty(PropertyName = "numericCode")]
+        public string NumericCode { get; set; }
+
+
+        [JsonProperty(PropertyName = "flag")]
+        public string Flag { get; set; }
+
+  
+
+        [JsonProperty(PropertyName = "cioc")]
+        public string Cioc { get; set; }
+    }
 }

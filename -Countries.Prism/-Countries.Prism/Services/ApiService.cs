@@ -1,53 +1,51 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Countries.prism.Services;
+using Countries.Prism.Models;
 using Newtonsoft.Json;
 namespace MyLeasing.Common.Services
 {
     public class ApiService : IApiService
     {
-        public async Task<Response> GetTokenAsync(
-            string urlBase,
-            string servicePrefix,
-            string controller)
+        public async Task<Response> ApiCountryAsync<T>(
+            string urlBase)
         {
             try
             {
-                var requestString = JsonConvert.SerializeObject(request);
-                var content = new StringContent(requestString, Encoding.UTF8, "application/json");
-                var client = new HttpClient
-                {
-                    BaseAddress = new Uri(urlBase)
-                };
-
-                var url = $"{urlBase}{servicePrefix}{controller}";
-                var response = await client.PostAsync(url, content);
+                var client = new HttpClient();
+                client.BaseAddress = new Uri(urlBase);
+                var apiLink = string.Format("{0}", urlBase);
+                var response = await client.GetAsync(apiLink);
                 var result = await response.Content.ReadAsStringAsync();
+
 
                 if (!response.IsSuccessStatusCode)
                 {
                     return new Response
                     {
-                        IsSuccess = false,models
+                        IsSuccess = false,
                         Message = result,
                     };
                 }
 
-                var token = JsonConvert.DeserializeObject<TokenResponse>(result);
+                var list = JsonConvert.DeserializeObject<List<T>>(result);
                 return new Response
                 {
                     IsSuccess = true,
-                    Result = token
+                    Message = "Ok",
+                    Result = list,
                 };
             }
+
             catch (Exception ex)
             {
                 return new Response
                 {
                     IsSuccess = false,
-                    Message = ex.Message
+                    Message = ex.Message,
                 };
             }
         }

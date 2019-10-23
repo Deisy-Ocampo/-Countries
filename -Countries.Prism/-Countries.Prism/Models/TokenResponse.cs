@@ -4,7 +4,7 @@ using System.Text;
 using Newtonsoft.Json;
 
 
-namespace -Countries.Prism.Models
+namespace Countries.Prism.Models
 {
     class TokenResponse
 {

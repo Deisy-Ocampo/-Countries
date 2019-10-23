@@ -1,7 +1,12 @@
-﻿namespace Countries.prism.Services
+﻿
+using Countries.Prism.Models;
+using System.Threading.Tasks;
+
+namespace Countries.prism.Services
 {
     public interface IApiService
     {
-        System.Threading.Tasks.Task<Response> GetTokenAsync(string urlBase, string servicePrefix, string controller);
+        Task<Response> ApiCountryAsync<T>(
+            string urlBase);
     }
 }

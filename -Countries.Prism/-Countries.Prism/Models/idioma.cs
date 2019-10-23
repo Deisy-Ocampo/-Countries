@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace -Countries.Prism.Models
+namespace Countries.Prism.Models
 {
-    class idioma
+    public class idioma
 {
     [JsonProperty(PropertyName = "iso639_1")]
     public string Iso6391 { get; set; }

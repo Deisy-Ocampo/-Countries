@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.89
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "-Countries.Prism", "-Countries.Prism\-Countries.Prism\-Countries.Prism.csproj", "{D713D315-9A85-42E3-B432-154F0D8B6EE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Countries.Prism", "-Countries.Prism\-Countries.Prism\Countries.Prism.csproj", "{D713D315-9A85-42E3-B432-154F0D8B6EE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "-Countries.Prism.Android", "-Countries.Prism\-Countries.Prism.Android\-Countries.Prism.Android.csproj", "{DA6DB129-079B-4C9B-BE06-7B1045236890}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Countries.Prism.Android", "-Countries.Prism\-Countries.Prism.Android\Countries.Prism.Android.csproj", "{DA6DB129-079B-4C9B-BE06-7B1045236890}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

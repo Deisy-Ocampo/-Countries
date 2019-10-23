@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace -Countries.Prism.Views
+namespace _Countries.Prism.Views
 {
     public partial class CountriesPage : ContentPage
 {

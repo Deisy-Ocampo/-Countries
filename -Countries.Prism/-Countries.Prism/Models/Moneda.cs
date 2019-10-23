@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace -Countries.Prism.Models
+namespace Countries.Prism.Models
 {
-    class Moneda
+    public class Moneda
 {
     [JsonProperty(PropertyName = "code")]
     public string Code { get; set; }
