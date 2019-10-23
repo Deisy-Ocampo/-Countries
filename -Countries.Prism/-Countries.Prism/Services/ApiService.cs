@@ -22,7 +22,7 @@ namespace MyLeasing.Common.Services
                     BaseAddress = new Uri(urlBase)
                 };
 
-                var url = $"{servicePrefix}{controller}";
+                var url = $"{urlBase}{servicePrefix}{controller}";
                 var response = await client.PostAsync(url, content);
                 var result = await response.Content.ReadAsStringAsync();
 
@@ -30,7 +30,7 @@ namespace MyLeasing.Common.Services
                 {
                     return new Response
                     {
-                        IsSuccess = false,
+                        IsSuccess = false,models
                         Message = result,
                     };
                 }

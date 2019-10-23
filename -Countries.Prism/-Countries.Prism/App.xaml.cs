@@ -1,21 +1,18 @@
-﻿using Prism;
-using Prism.Ioc;
-using _Countries.Prism.ViewModels;
-using _Countries.Prism.Views;
+﻿using Prism.Ioc;
+using Countries.Prism.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Countries.prism.Services;
+using Prism;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace _Countries.Prism
 {
+    
+
     public partial class App
     {
-        /* 
-         * The Xamarin Forms XAML Previewer in Visual Studio uses System.Activator.CreateInstance.
-         * This imposes a limitation in which the App class must have a default constructor. 
-         * App(IPlatformInitializer initializer = null) cannot be handled by the Activator.
-         */
+        
         public App() : this(null) { }
 
         public App(IPlatformInitializer initializer) : base(initializer) { }

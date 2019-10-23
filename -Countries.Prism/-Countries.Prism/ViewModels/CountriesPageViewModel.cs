@@ -6,7 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace -Countries.Prism.ViewModels
+
+namespace Countries.Prism.ViewModels
 {
 	public class CountriesPageViewModel : ViewModelBase
 {
